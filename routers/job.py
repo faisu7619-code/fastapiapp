@@ -17,12 +17,9 @@ def get_all_job():
 def get_job(job_id: int):
     return jobs[job_id]
 
-@router.get("/{job_id}")
-def get_job(job_id: int):
-    return jobs[job_id]
-
 @router.put("/{job_id}")
-def update_job(job_id: int,job: JobUpdate):
+def update_job(job_id: int, job: JobUpdate):
+    jobs[job_id] = job
     return jobs
 
 @router.delete("/{job_id}")
