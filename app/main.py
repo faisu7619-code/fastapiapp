@@ -1,8 +1,9 @@
 from fastapi import FastAPI
-
 from routers import company,job
-from database import Base, engine
-from model import company as company_model, job as job_model
+from database import Base,engine
+from models import job as job_model,company as company_model
+
+
 app = FastAPI()
 print(engine)
 
@@ -22,3 +23,9 @@ def read_about():
 @app.get("/contact")
 def read_contact():
     return {"contact": "This is contact page"}
+#  Albattrosdip
+# steps---> 
+#  1.postgres drivers
+# 2.servers
+# 3. registration -> enterprise db->first two options
+# student_db>database>schemas>tables>right click>query tool

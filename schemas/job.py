@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional
 
+
 class JobBase(BaseModel):
     title: str
     salary: int
@@ -19,6 +20,6 @@ class JobUpdate(JobBase):
 class JobResponse(JobBase):
     id: int
     company_id: int
-
+    
     class Config:
         from_attributes = True
