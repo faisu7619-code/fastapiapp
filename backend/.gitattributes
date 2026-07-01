@@ -1,0 +1,8 @@
+# Enforce LF line endings for source files and package metadata
+*.json text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.py text eol=lf
+*.md text eol=lf
